@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+    mosquitto:
+        container_name: mosquitto_MQTT
+        build: ./builds/mosquitto
+        ports:
+          - "1883:1883"
+        volumes:
+          - ./volumes/mosquitto/config:/mosquitto/config
+          - ./volumes/mosquitto/data:/mosquitto/data
+          - ./volumes/mosquitto/log:/mosquitto/log
+        environment:
+            MOSQUITTO_USERNAME: demo
+            MOSQUITTO_PASSWORD: 1234
+            TZ: Asia/Bangkok
+        restart: always
