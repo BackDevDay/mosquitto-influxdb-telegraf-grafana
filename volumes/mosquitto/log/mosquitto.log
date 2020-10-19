@@ -1,0 +1,13 @@
+2020-10-16T17:01:26: mosquitto version 1.6.12 starting
+2020-10-16T17:01:26: Config loaded from /mosquitto/config/mosquitto.conf.
+2020-10-16T17:01:26: Opening ipv4 listen socket on port 1111.
+2020-10-16T17:01:26: Opening ipv6 listen socket on port 1111.
+2020-10-16T17:01:26: mosquitto version 1.6.12 running
+2020-10-16T17:31:25: Saving in-memory database to /mosquitto/data/mosquitto.db.
+2020-10-16T18:01:24: Saving in-memory database to /mosquitto/data/mosquitto.db.
+2020-10-19T10:37:57: mosquitto version 1.6.12 starting
+2020-10-19T10:37:57: Config loaded from /mosquitto/config/mosquitto.conf.
+2020-10-19T10:37:57: Opening ipv4 listen socket on port 1111.
+2020-10-19T10:37:57: Opening ipv6 listen socket on port 1111.
+2020-10-19T10:37:57: mosquitto version 1.6.12 running
+2020-10-19T11:46:34: Saving in-memory database to /mosquitto/data/mosquitto.db.
