@@ -6,7 +6,7 @@ services:
         ports:
           - "1883:1883"
         volumes:
-          - ./volumes/mosquitto/config:/mosquitto/config
+          - ./builds/mosquitto/config:/mosquitto/config
           - ./volumes/mosquitto/data:/mosquitto/data
           - ./volumes/mosquitto/log:/mosquitto/log
         environment:
@@ -51,6 +51,18 @@ services:
             TZ: Asia/Bangkok
         restart: always
 
+    grafana:
+      container_name: grafana
+      image: grafana/grafana:7.2.1
+      ports:
+          - 3000:3000
+      volumes:
+          - ./volumes/grafana:/var/lib/grafana
+      environment:
+        GF_SECURITY_ADMIN_PASSWORD: 123456
+        TZ: Asia/Bangkok
+      restart: always
+
     platform:
         container_name: portainer
         image: portainer/portainer
@@ -65,4 +77,4 @@ services:
 networks:
     default:
         external:
-            name: IoT-Site
+            name: GC-IoT-Site
